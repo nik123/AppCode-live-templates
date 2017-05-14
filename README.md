@@ -1,47 +1,32 @@
 # appcode-live-templates
+
 Collection of live templates for AppCode
 
-### wself
-Insert weak reference to self.
-```
-__weak typeof(self) weakSelf = self;
-```
+## Installation
 
-### after
-Insert dispatch after code block.
-```
-dispatch_after(dispatch_time(DISPATCH_TIME_NOW, $TIME$ * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-  $CODE$;
-});
-```
+1. Clone this repository
+1. Copy Objective-C.xml file to ```~/Library/Preferences/AppCode<version>/templates``` 
+1. Restart AppCode.
 
-### dtime
-Insert dispatch time code block.
-```
-dispatch_time(DISPATCH_TIME_NOW, $SECONDS$ * NSEC_PER_SEC)
-```
+## Templates
 
-### dmain
-Insert dispatch async on main queue block.
+### propnro
+
+Insert nonatomic weak property.
+
 ```
-dispatch_async(dispatch_get_main_queue(), ^{
-  $END$
-})
+@property(nonatomic, weak) $DECLARATION$;$END$
 ```
 
 ### propns
+
 Insert nonatomic strong property.
 ```
 @property(nonatomic, strong) $DECLARATION$;$END$
 ```
 
-### propnw
-Insert nonatomic weak property.
-```
-@property(nonatomic, weak) $DECLARATION$;$END$
-```
-
 ### privcat
+
 Insert private category code block.
 ```
 @interface $CLASS_NAME$ ()
@@ -49,12 +34,16 @@ $END$
 @end
 ```
 
-### sformat
-Insert string with format snippet.
+### wself
+
+Insert weak reference to self.
 ```
-[NSString stringWithFormat:@"$FORMAT$", $ITEMS$];$END$
+__weak typeof(self) weakSelf = self;
 ```
 
-## Installation
-Clone this repository in ```~/Library/Preferences/<product><version>/templates``` and restart AppCode.
+### propnw
 
+Insert nonatomic weak property.
+```
+@property(nonatomic, weak) $DECLARATION$;$END$
+```
