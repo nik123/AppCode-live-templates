@@ -28,4 +28,10 @@
       <option name="OC_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="propnwo" value="@property (nonatomic, weak) IBOutlet $DECLARATION$;$END$" description="@property (nonatomic, weak)" toReformat="true" toShortenFQNames="true">
+    <variable name="DECLARATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_DECLARATION" value="true" />
+    </context>
+  </template>
 </templateSet>

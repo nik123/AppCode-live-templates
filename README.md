@@ -12,10 +12,10 @@ Collection of live templates for AppCode
 
 ### propnro
 
-Insert nonatomic weak property.
+Insert nonatomic read only property.
 
 ```
-@property(nonatomic, weak) $DECLARATION$;$END$
+@property(nonatomic, readonly) $DECLARATION$;$END$
 ```
 
 ### propns
@@ -46,4 +46,11 @@ __weak typeof(self) weakSelf = self;
 Insert nonatomic weak property.
 ```
 @property(nonatomic, weak) $DECLARATION$;$END$
+```
+
+### propnwo
+
+Insert nonatomic weak IBOutlet property.
+```
+@property(nonatomic, weak) IBOutlet $DECLARATION$;$END$
 ```
