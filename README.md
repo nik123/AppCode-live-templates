@@ -10,6 +10,14 @@ Collection of live templates for AppCode
 
 ## Templates
 
+### propn
+
+Insert nonatomic property
+
+```
+@property(nonatomic) $DECLARATION$;$END$
+```
+
 ### propnro
 
 Insert nonatomic read only property.
@@ -53,4 +61,14 @@ Insert nonatomic weak property.
 Insert nonatomic weak IBOutlet property.
 ```
 @property(nonatomic, weak) IBOutlet $DECLARATION$;$END$
+```
+
+### ncadd
+
+Add NSNotificationCenter observer
+```
+[[NSNotificationCenter defaultCenter] addObserver:$OBS$
+                                selector:@selector($SELECTOR$)
+                                name:$NAME$
+                                object:$OBJ$];$END$
 ```
