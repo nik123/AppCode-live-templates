@@ -23,7 +23,7 @@
       <option name="OC_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="wself" value="__weak typeof(self) weakSelf = self;" description="Weak reference to self" toReformat="false" toShortenFQNames="true">
+  <template name="wself" value="__weak __auto_type weakSelf = self;" description="Weak reference to self" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OC_STATEMENT" value="true" />
     </context>
@@ -45,6 +45,11 @@
     <variable name="SELECTOR" expression="complete()" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="OBJ" expression="" defaultValue="&quot;nil&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="wselfs" value="__weak __auto_type strongSelf = weakSelf;" description="Strong reference to weakSelf" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OC_STATEMENT" value="true" />
     </context>

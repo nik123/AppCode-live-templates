@@ -44,7 +44,14 @@ $END$
 
 ### wself
 
-Insert weak reference to self.
+Insert weakSelf statement, i.e. weak reference to self.
+```
+__weak typeof(self) weakSelf = self;
+```
+
+### wself
+
+Insert strong reference to weakSelf. Useful in pair with wself template
 ```
 __weak typeof(self) weakSelf = self;
 ```
