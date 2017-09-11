@@ -5,7 +5,7 @@ Collection of live templates for AppCode
 ## Installation
 
 1. Clone this repository
-1. Copy Objective-C.xml file to ```~/Library/Preferences/AppCode<version>/templates``` 
+1. Copy Objective-C.xml file to ```~/Library/Preferences/AppCode<version>/templates```
 1. Restart AppCode.
 
 ## Templates
@@ -49,11 +49,11 @@ Insert weakSelf statement, i.e. weak reference to self.
 __weak typeof(self) weakSelf = self;
 ```
 
-### wself
+### wselfs
 
 Insert strong reference to weakSelf. Useful in pair with wself template
 ```
-__weak typeof(self) weakSelf = self;
+__strong __auto_type strongSelf = weakSelf;
 ```
 
 ### propnw
