@@ -54,4 +54,11 @@
       <option name="OC_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="dafter" value="dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)($TIME$ * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{&#10;    $CODE$&#10;});" description="Dispatch after in Main queue" toReformat="true" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

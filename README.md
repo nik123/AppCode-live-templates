@@ -79,3 +79,12 @@ Add NSNotificationCenter observer
                                 name:$NAME$
                                 object:$OBJ$];$END$
 ```
+
+### dafter
+
+Dispatch after in Main queue
+```
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)($TIME$ * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    $CODE$
+});
+```
