@@ -49,7 +49,7 @@
       <option name="OC_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="wselfs" value="__weak __auto_type strongSelf = weakSelf;" description="Strong reference to weakSelf" toReformat="false" toShortenFQNames="true">
+  <template name="wselfs" value="__auto_type strongSelf = weakSelf;" description="Strong reference to weakSelf" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="OC_STATEMENT" value="true" />
     </context>
